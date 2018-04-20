@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/url/of/previous/page">Back</a>
+
+      <h1 class="heading-large">How long have you been juggling for?
+      </h1>
+
+      <form class="form" action="/check-your-answers" method="post">
+
+        <p>We need to know about your experience so we can give you the right licence</p>
+
+        <div class="form-group">
+  <label class="form-label" for="select-box">This is the label text</label>
+  <select class="form-control" id="select-box" name="number">
+    <option>10 years or more</option>
+    <option>8-10 years</option>
+    <option>6-8 years</option>
+    <option>4-6 years</option>
+    <option>less than 4 years</option>
+  </select>
+
+</div>
+
+        <p>[See <a href="https://govuk-elements.herokuapp.com/form-elements/">GOV.UK Elements</a> for examples]</p>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
